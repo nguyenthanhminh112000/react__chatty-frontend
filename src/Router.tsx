@@ -6,6 +6,7 @@ import Home from '@pages/Home';
 import { useStates } from '@store/models/theme';
 import Support from '@pages/Support';
 import Sample from '@pages/Sample';
+import AppRouter from '@root/routes';
 
 const Router = () => {
   const { theme } = useStates();
@@ -19,6 +20,7 @@ const Router = () => {
       <BrowserRouter>
         <Header />
         <div className="mt-4 mx-5">
+          <AppRouter />
           <Routes>
             <Route path={ROUTES.HOME} element={<Home />} />
             <Route path={ROUTES.SAMPLE} element={<Sample />} />
