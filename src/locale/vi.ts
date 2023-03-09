@@ -16,7 +16,9 @@ const vi = {
   sign_up_button: 'ĐĂNG NHẬP',
   back_to_login: 'Trở lại Đăng Nhập',
   forgot_password_title: 'Quên Mật Khẩu',
-  forgot_password_button: 'QUÊN MẬT KHẨU'
+  forgot_password_button: 'QUÊN MẬT KHẨU',
+  reset_password_title: 'Đặt Lại Mật Khẩu',
+  reset_password_button: 'ĐẶT LẠI MẬT KHẨU'
 };
 
 export default vi;

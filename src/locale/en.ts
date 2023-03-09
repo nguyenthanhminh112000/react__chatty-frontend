@@ -16,7 +16,9 @@ const en = {
   sign_up_button: 'SIGN UP',
   back_to_login: 'Back to Login',
   forgot_password_title: 'Forgot Password',
-  forgot_password_button: 'FORGOT PASSWORD'
+  forgot_password_button: 'FORGOT PASSWORD',
+  reset_password_title: 'Reset Password',
+  reset_password_button: 'RESET PASSWORD'
 };
 
 export default en;
