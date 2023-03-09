@@ -1,19 +1,22 @@
+import React from 'react';
+import './AuthTabs.scss';
+
 const AuthTabs = () => {
   return (
-    <div className="">
-      <div className="">DEV</div>
-      <div className="">
-        <div className="">
-          <div className="">
-            <ul className="">
-              <li className="">
-                <button className="">Sign In</button>
+    <div className="container-wrapper">
+      <div className="environment">DEV</div>
+      <div className="container-wrapper-auth">
+        <div className="tabs">
+          <div className="tabs-auth">
+            <ul className="tab-group">
+              <li className="tab active">
+                <button className="login">Sign In</button>
               </li>
-              <li className="">
-                <button className="">Sign Up</button>
+              <li className="tab">
+                <button className="signup">Sign Up</button>
               </li>
             </ul>
-            <div className="">login component</div>
+            <div className="tab-item">login component</div>
           </div>
         </div>
       </div>
