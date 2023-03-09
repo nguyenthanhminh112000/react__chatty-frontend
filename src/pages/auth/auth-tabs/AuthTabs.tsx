@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { useTranslations } from '@utils/intlTools';
 import backgroundImage from './../../../assets/images/background.jpg';
 import Login from '@pages/auth/Login';
+import Register from '@pages/auth/Register';
 import './AuthTabs.scss';
 
 const SIGN_IN = 'SIGN_IN';
 const SIGN_UP = 'SIGN_UP';
-type PageType = typeof SIGN_IN | typeof SIGN_UP | '';
+type PageType = typeof SIGN_IN | typeof SIGN_UP;
 const AuthTabs = () => {
-  const [pageType, setPageType] = useState<PageType>('');
+  const [pageType, setPageType] = useState<PageType>(SIGN_IN);
   const [sign_in_title, sign_up_title] = useTranslations(['sign_in_title', 'sign_up_title']);
   const handleSetPage = (pageType: PageType) => {
     setPageType(pageType);
@@ -42,7 +43,11 @@ const AuthTabs = () => {
                 <Login />
               </div>
             )}
-            {pageType === SIGN_UP && <div className="tab-item">SIGN UP component</div>}
+            {pageType === SIGN_UP && (
+              <div className="tab-item">
+                <Register />
+              </div>
+            )}
           </div>
         </div>
       </div>

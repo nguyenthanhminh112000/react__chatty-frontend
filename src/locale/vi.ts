@@ -11,7 +11,9 @@ const vi = {
   sign_in_title: 'Đăng nhập',
   sign_up_title: 'Đăng ký',
   forgot_password: 'Quên mật khẩu?',
-  keep_sign_in: 'Giữ truy cập'
+  keep_sign_in: 'Giữ truy cập',
+  sign_in_button: 'ĐĂNG KÝ',
+  sign_up_button: 'ĐĂNG NHẬP'
 };
 
 export default vi;

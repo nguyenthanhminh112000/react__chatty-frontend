@@ -11,7 +11,9 @@ const en = {
   sign_in_title: 'Sign in',
   sign_up_title: 'Sign up',
   forgot_password: 'Forgot password?',
-  keep_sign_in: 'Keep me signed in'
+  keep_sign_in: 'Keep me signed in',
+  sign_in_button: 'SIGN IN',
+  sign_up_button: 'SIGN UP'
 };
 
 export default en;
