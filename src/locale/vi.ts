@@ -9,7 +9,9 @@ const vi = {
   support: 'Hỗ trợ',
   sample: 'Trang mẫu',
   sign_in_title: 'Đăng nhập',
-  sign_up_title: 'Đăng ký'
+  sign_up_title: 'Đăng ký',
+  forgot_password: 'Quên mật khẩu?',
+  keep_sign_in: 'Giữ truy cập'
 };
 
 export default vi;

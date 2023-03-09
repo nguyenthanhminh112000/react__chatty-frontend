@@ -9,7 +9,9 @@ const en = {
   support: 'Support',
   sample: 'Sample',
   sign_in_title: 'Sign in',
-  sign_up_title: 'Sign up'
+  sign_up_title: 'Sign up',
+  forgot_password: 'Forgot password?',
+  keep_sign_in: 'Keep me signed in'
 };
 
 export default en;
