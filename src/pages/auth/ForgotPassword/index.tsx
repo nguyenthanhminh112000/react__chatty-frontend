@@ -15,6 +15,7 @@ const ForgotPassword = () => {
   ]);
   return (
     <div className="container-wrapper">
+      <div className="environment">DEV</div>
       <div className="container-wrapper-auth">
         <div className="tabs forgot-password-tabs">
           <div className="tabs-auth">
