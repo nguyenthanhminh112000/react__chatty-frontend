@@ -7,7 +7,9 @@ const vi = {
   create_post: 'Đăng',
   home_primary_text: 'Cùng nhau, ta viết nên tương lai',
   support: 'Hỗ trợ',
-  sample: 'Trang mẫu'
+  sample: 'Trang mẫu',
+  sign_in_title: 'Đăng nhập',
+  sign_up_title: 'Đăng ký'
 };
 
 export default vi;
