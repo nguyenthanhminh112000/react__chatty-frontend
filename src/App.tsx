@@ -2,6 +2,7 @@ import { Provider } from 'react-redux';
 import { store } from '@store/index';
 import Router from '@root/Router';
 import ConnectedIntlProvider from '@root/ConnectedIntl';
+import './App.scss';
 
 function App() {
   return (
