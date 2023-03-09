@@ -9,7 +9,7 @@ type InputProps = {
   value?: string;
   className?: string;
   placeholder?: string;
-  handleChange: () => void;
+  handleChange?: () => void;
 };
 
 const Input = ({
