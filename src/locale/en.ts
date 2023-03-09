@@ -13,7 +13,10 @@ const en = {
   forgot_password: 'Forgot password?',
   keep_sign_in: 'Keep me signed in',
   sign_in_button: 'SIGN IN',
-  sign_up_button: 'SIGN UP'
+  sign_up_button: 'SIGN UP',
+  back_to_login: 'Back to Login',
+  forgot_password_title: 'Forgot Password',
+  forgot_password_button: 'FORGOT PASSWORD'
 };
 
 export default en;

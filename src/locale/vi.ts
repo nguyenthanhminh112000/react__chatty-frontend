@@ -13,7 +13,10 @@ const vi = {
   forgot_password: 'Quên mật khẩu?',
   keep_sign_in: 'Giữ truy cập',
   sign_in_button: 'ĐĂNG KÝ',
-  sign_up_button: 'ĐĂNG NHẬP'
+  sign_up_button: 'ĐĂNG NHẬP',
+  back_to_login: 'Trở lại Đăng Nhập',
+  forgot_password_title: 'Quên Mật Khẩu',
+  forgot_password_button: 'QUÊN MẬT KHẨU'
 };
 
 export default vi;

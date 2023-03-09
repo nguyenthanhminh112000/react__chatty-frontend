@@ -1,3 +1,3 @@
 import AuthTabs from './auth-tabs/AuthTabs';
-
-export { AuthTabs };
+import ForgotPassword from './ForgotPassword';
+export { AuthTabs, ForgotPassword };
