@@ -2,9 +2,10 @@ import React from 'react';
 import './Input.scss';
 
 type InputProps = {
+  id?: string;
   name: string;
-  labelText?: string;
   type: string;
+  labelText?: string;
   value?: string;
   className?: string;
   placeholder?: string;
@@ -12,6 +13,7 @@ type InputProps = {
 };
 
 const Input = ({
+  id,
   name,
   type,
   value,
@@ -28,6 +30,7 @@ const Input = ({
         </label>
       )}
       <input
+        id={id}
         type={type}
         name={name}
         value={value}
