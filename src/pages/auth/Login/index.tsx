@@ -25,7 +25,6 @@ const Login = () => {
             id="username"
             name="username"
             type="text"
-            value="my user name"
             labelText="Username"
             placeholder="Enter username"
           />
@@ -33,12 +32,11 @@ const Login = () => {
             id="password"
             name="password"
             type="password"
-            value="my password"
             labelText="Password"
             placeholder="Enter password"
           />
           <label className="checkmark-container" htmlFor="checkbox">
-            <Input id="checkbox" name="checkbox" type="checkbox" value={'true'} />
+            <Input id="checkbox" name="checkbox" type="checkbox" />
             {keep_sign_in}
           </label>
         </div>

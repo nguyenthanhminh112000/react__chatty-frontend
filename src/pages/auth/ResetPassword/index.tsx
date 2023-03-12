@@ -36,23 +36,15 @@ const ResetPassword = () => {
                       id="password"
                       name="password"
                       type="password"
-                      value={''}
                       labelText="New Password"
                       placeholder="New Password"
-                      handleChange={() => {
-                        console.log('a');
-                      }}
                     />
                     <Input
                       id="cpassword"
                       name="cpassword"
                       type="password"
-                      value={'confirmPassword'}
                       labelText="Confirm Password"
                       placeholder="Confirm Password"
-                      handleChange={() => {
-                        console.log('a');
-                      }}
                     />
                   </div>
                   <Button

@@ -36,7 +36,6 @@ const ForgotPassword = () => {
                       id="username"
                       name="username"
                       type="text"
-                      value="my user name"
                       labelText="Username"
                       placeholder="Enter username"
                     />
