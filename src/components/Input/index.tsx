@@ -6,22 +6,12 @@ type InputProps = {
   name: string;
   type: string;
   labelText?: string;
-  value?: string;
   className?: string;
   placeholder?: string;
-  handleChange?: () => void;
+  register?: any;
 };
 
-const Input = ({
-  id,
-  name,
-  type,
-  value,
-  className,
-  labelText,
-  placeholder,
-  handleChange
-}: InputProps) => {
+const Input = ({ id, name, type, className, labelText, placeholder, register }: InputProps) => {
   return (
     <div className="form-row">
       {labelText && (
@@ -33,11 +23,10 @@ const Input = ({
         id={id}
         type={type}
         name={name}
-        value={value}
-        onChange={handleChange}
         placeholder={placeholder}
         className={`form-input ${className}`}
         autoComplete="false"
+        {...(register && register(name))}
       />
     </div>
   );
