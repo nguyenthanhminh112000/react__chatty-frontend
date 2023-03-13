@@ -3,6 +3,10 @@ import { useForm } from 'react-hook-form';
 import { useTranslations } from '@utils/intlTools';
 import Input from '@components/Input';
 import Button from '@components/Button/Button';
+import {
+  useStates as useRegisterStates,
+  useActions as useRegisterActions
+} from '@store/models/register';
 import './index.scss';
 
 type RegisterForm = {
@@ -12,18 +16,23 @@ type RegisterForm = {
 };
 
 const Register = () => {
+  const { loading, errorMessage, alertType, hasError } = useRegisterStates();
+  const { register: registerAccount } = useRegisterActions();
   const [sign_up_button] = useTranslations(['sign_up_button']);
   const { register, handleSubmit } = useForm<RegisterForm>();
-  const onSubmit = (data: any) => {
-    console.log(data);
-  };
 
   return (
     <div className="auth-inner">
       <div className="alerts" role="alert">
         Error message
       </div>
-      <form className="auth-form" onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className="auth-form"
+        onSubmit={handleSubmit((data: any) => {
+          console.log('here is data', data);
+          registerAccount(data);
+        })}
+      >
         <div className="form-input-container">
           <Input
             id="email"

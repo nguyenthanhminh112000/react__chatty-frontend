@@ -8,4 +8,4 @@ export const createModuleAction = <T, Q, K>(moduleName: string, actionName: stri
   };
 };
 
-export const createSagaHandler = (fn: () => void) => fn;
+export const createSagaHandler = (fn: any) => fn;
